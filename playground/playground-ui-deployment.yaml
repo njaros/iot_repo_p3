@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: playground-ui
+  name: wil-playground
 spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: playground-ui
+      app: wil-playground
   template:
     metadata:
       labels:
-        app: playground-ui
+        app: wil-playground
     spec:
       containers:
       - image: https://hub.docker.com/r/wil42/playground:v1
-        name: playground-ui
+        name: wil-playground
         ports:
         - containerPort: 80
