@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: wil-playground
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
   - port: 8888
     targetPort: 8888
